@@ -283,34 +283,37 @@
         <div class="help-section">
             <div class="request-form">
                 <h2 class="form-title">الانضمام لفريق المعربيين</h2>
-                <form id="helpForm" action="https://formsubmit.co/ahmed.r.elshrief@gmail.com" method="POST" onsubmit="return validateForm()">
-                    <div class="form-group">
-                        <label for="name">اسمك</label>
-                        <input type="text" id="name" name="name" placeholder="اسمك الكامل" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">البريد الإلكتروني</label>
-                        <input type="email" id="email" name="email" placeholder="بريدك الإلكتروني" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="contact-method">طريقة التواصل المفضلة</label>
-                        <select id="contact-method" name="contact-method" required>
-                            <option value="">اختر طريقة التواصل</option>
-                            <option value="email">البريد الإلكتروني</option>
-                            <option value="discord">ديسكورد</option>
-                            <option value="facebook">فيسبوك</option>
-                        </select>
-                    </div>
-                                        
-                    <div class="form-group">
-                        <label for="message">اكتب رابط التواصل معك او الطريقه + مدي خبرتك عن التعريب وتعريف عنك</label>
-                        <textarea id="message" name="message" placeholder="صف مشكلتك أو المجال الذي تحتاج مساعدة فيه..." required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="submit-btn">إرسال الطلب</button>
-                </form>
+<form action="https://formsubmit.co/ahmed.r.elshrief@gmail.com" method="POST">
+    <div class="form-group">
+        <label for="name">اسمك</label>
+        <input type="text" id="name" name="name" placeholder="اسمك الكامل" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" name="email" placeholder="بريدك الإلكتروني" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="contact-method">طريقة التواصل المفضلة</label>
+        <select id="contact-method" name="contact-method" required>
+            <option value="">اختر طريقة التواصل</option>
+            <option value="email">البريد الإلكتروني</option>
+            <option value="discord">ديسكورد</option>
+            <option value="facebook">فيسبوك</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="message">اكتب رابط التواصل معك او الطريقة + مدى خبرتك عن التعريب وتعريف عنك</label>
+        <textarea id="message" name="message" placeholder="اكتب رابط التواصل معك او الطريقة + مدى خبرتك عن التعريب وتعريف عنك ه..." required></textarea>
+    </div>
+    
+    <input type="hidden" name="_next" value="https://archive-ahmed.netlify.app/thank.html">
+    <input type="hidden" name="_subject" value="طلب تعريب جديد">
+    
+    <button type="submit" class="submit-btn">إرسال الطلب</button>
+</form>
             </div>
             
             <div class="contact-info">
