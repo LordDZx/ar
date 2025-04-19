@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "permission": "approve",
+  "message_ar": "التطبيق يعمل بشكل طبيعي",
+  "message_en": "The application is working normally",
+  "contact": {
+    "discord": "ahmedlord4673",
+    "website": "https://archive-ahmed.netlify.app/"
+  }
+}
