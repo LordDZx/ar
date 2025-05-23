@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "permission": "approve",
+  "messages": {
+    "ar": {
+      "version_error": "الإصدار غير متوافق. سيتم توجيهك إلى موقعنا الآن...",
+      "permission_error": "التطبيق غير مصرح به حاليًا. سيتم توجيهك إلى موقعنا الآن...",
+      "success": "التطبيق يعمل بشكل طبيعي"
+    },
+    "en": {
+      "version_error": "Version incompatible. Redirecting to our website now...",
+      "permission_error": "Application not approved. Redirecting to our website now...",
+      "success": "The application is working normally"
+    }
+  },
+  "redirect_url": "https://archive-ahmed.netlify.app/",
+  "contact": {
+    "discord": "ahmedlord4673"
+  }
+}

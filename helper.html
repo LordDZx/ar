@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب مساعدة في التعريب - AhmedR</title>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="dc552ed4-e42d-41cc-a742-58e8386b86fd"></script>
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --secondary-color: #e63946;
+            --accent-color: #457b9d;
+            --text-color: #f1faee;
+            --light-gray: #a8dadc;
+            --discord-color: #5865F2;
+            --facebook-color: #1877F2;
+            --youtube-color: #FF0000;
+        }
+        
+        body {
+            font-family: 'Tajawal', Arial, sans-serif;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-left: 10px;
+        }
+        
+        .logo h1 {
+            color: var(--text-color);
+            font-size: 1.8rem;
+            margin: 0;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        
+        .page-title {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .help-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .request-form {
+            flex: 1;
+            min-width: 300px;
+            background-color: #2d2d2d;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .form-title {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #3d3d3d;
+            color: white;
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto 0;
+            width: 100%;
+            transition: all 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background-color: #c1121f;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            background-color: #2d2d2d;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .contact-title {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .contact-method {
+            margin-bottom: 25px;
+        }
+        
+        .contact-method h3 {
+            color: var(--light-gray);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-link {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .contact-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .email-link {
+            background-color: var(--secondary-color);
+        }
+        
+        .discord-link {
+            background-color: var(--discord-color);
+        }
+        
+        .facebook-link {
+            background-color: var(--facebook-color);
+        }
+        
+        .youtube-link {
+            background-color: var(--youtube-color);
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .social-icons a {
+            color: var(--text-color);
+            font-size: 1.8rem;
+            transition: color 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: var(--secondary-color);
+        }
+        
+        footer {
+            background-color: #0f0f0f;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .copyright {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .form-title, .contact-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="AhmedR Logo">
+            <h1>AhmedR</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="games.html"><i class="fas fa-gamepad"></i> تعريبات الألعاب</a></li>
+                <li><a href="request.html"><i class="fas fa-comment"></i> طلب تعريب</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> من نحن؟</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1 class="page-title">المساعده في التعريب</h1>
+        
+        <div class="help-section">
+            <div class="request-form">
+                <h2 class="form-title">الانضمام لفريق المعربيين</h2>
+<form action="https://formsubmit.co/ahmed.r.elshrief@gmail.com" method="POST">
+    <div class="form-group">
+        <label for="name">اسمك</label>
+        <input type="text" id="name" name="name" placeholder="اسمك الكامل" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" name="email" placeholder="بريدك الإلكتروني" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="contact-method">طريقة التواصل المفضلة</label>
+        <select id="contact-method" name="contact-method" required>
+            <option value="">اختر طريقة التواصل</option>
+            <option value="email">البريد الإلكتروني</option>
+            <option value="discord">ديسكورد</option>
+            <option value="facebook">فيسبوك</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="message">اكتب رابط التواصل معك او الطريقة + مدى خبرتك عن التعريب وتعريف عنك</label>
+        <textarea id="message" name="message" placeholder="اكتب رابط التواصل معك او الطريقة + مدى خبرتك عن التعريب وتعريف عنك ه..." required></textarea>
+    </div>
+    
+    <input type="hidden" name="_next" value="https://archive-ahmed.netlify.app/thank.html">
+    <input type="hidden" name="_subject" value="الانضمام لفريق المعربيين">
+    
+    <button type="submit" class="submit-btn">إرسال الطلب</button>
+</form>
+            </div>
+            
+            <div class="contact-info">
+                <h2 class="contact-title">تواصل مع المعرب</h2>
+                
+                <div class="contact-method">
+                    <h3><i class="fas fa-envelope"></i> البريد الإلكتروني</h3>
+                    <p>للاستفسارات العامة وطلبات المساعدة</p>
+                    <a href="mailto:ahmed.r.elshrief@gmail.com" class="contact-link email-link">
+                        ahmed.r.elshrief@gmail.com
+                    </a>
+                </div>
+                
+                <div class="contact-method">
+                    <h3><i class="fab fa-discord"></i> ديسكورد</h3>
+                    <p>للتواصل المباشر والمجتمع التقني</p>
+                    <a href="https://discord.com/channels/@ahmedlord4673" class="contact-link discord-link">
+                        ahmedlord4673 (اضغط للنسخ)
+                    </a>
+                </div>
+                
+                <div class="contact-method">
+                    <h3><i class="fab fa-facebook"></i> فيسبوك</h3>
+                    <p>لمتابعة آخر الأخبار والتحديثات</p>
+                    <a href="https://www.facebook.com/profile.php?id=100055088783209" class="contact-link facebook-link">
+                        صفحة AhmedR على فيسبوك
+                    </a>
+                </div>
+                
+                <div class="contact-method">
+                    <h3><i class="fab fa-youtube"></i> يوتيوب</h3>
+                    <p>لشروحات التعريب والألعاب</p>
+                    <a href="https://www.youtube.com/@LordDZX" class="contact-link youtube-link">
+                        قناة AhmedR على يوتيوب
+                    </a>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="https://discord.com/channels/@me/ahmedlord4673"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100055088783209"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@LordDZX"><i class="fab fa-youtube"></i></a>
+                    <a href="https://x.com/AhmedR_ELSHRIEF"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p class="copyright">جميع الحقوق محفوظة &copy; <span id="year"></span> AhmedR لتعريب الألعاب</p>
+    </footer>
+
+    <script>
+        // إضافة السنة الحالية تلقائياً
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // حماية من XSS وتطهير المدخلات
+        function sanitizeInput(input) {
+            const div = document.createElement('div');
+            div.textContent = input;
+            return div.innerHTML;
+        }
+        
+        // نسخ اسم مستخدم الديسكورد عند النقر
+        document.querySelector('.discord-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            const discordName = 'ahmedlord4673';
+            navigator.clipboard.writeText(discordName).then(() => {
+                this.textContent = 'تم النسخ!';
+                setTimeout(() => {
+                    this.textContent = 'ahmedlord4673 (اضغط للنسخ)';
+                }, 2000);
+            });
+        });
+        
+        // التحقق من صحة النموذج
+        function validateForm() {
+            const form = document.getElementById('helpForm');
+            const inputs = form.querySelectorAll('input, textarea, select');
+            
+            inputs.forEach(input => {
+                input.value = sanitizeInput(input.value);
+            });
+            
+            // هنا يمكنك إضافة المزيد من التحقق من الصحة
+            // أو إرسال النموذج عبر AJAX
+            
+            alert('تم استلام طلبك بنجاح! سنتواصل معك قريباً.');
+            form.reset();
+            return false; // لمنع إرسال النموذج الفعلي لأغراض العرض
+        }
+    </script>
+</body>
+</html>

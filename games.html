@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعريبات الألعاب - AhmedR</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta name="description" content="تحميل آخر تعريبات الألعاب العربية - باتشات الترجمة الكاملة للألعاب">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="dc552ed4-e42d-41cc-a742-58e8386b86fd"></script>
+    <!-- نفس أنماط CSS من الملف الرئيسي -->
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --secondary-color: #e63946;
+            --accent-color: #457b9d;
+            --text-color: #f1faee;
+            --light-gray: #a8dadc;
+        }
+        
+        body {
+            font-family: 'Tajawal', Arial, sans-serif;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-left: 10px;
+        }
+        
+        .logo h1 {
+            color: var(--text-color);
+            font-size: 1.8rem;
+            margin: 0;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--secondary-color);
+            display: inline-block;
+        }
+        
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .game-card {
+            background-color: #2d2d2d;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .game-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .game-card-content {
+            padding: 15px;
+        }
+        
+        .game-card h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .game-card p {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #c1121f;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        footer {
+            background-color: #0f0f0f;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+            padding: 0 15px;
+        }
+        
+        .footer-section h3 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: var(--light-gray);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            color: var(--text-color);
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .copyright {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: var(--light-gray);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+                justify-content: center;
+            }
+            
+            .games-grid {
+                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            }
+        }
+    </style>
+    
+    <!-- روابط الخطوط والأيقونات -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="AhmedR Logo">
+            <h1>AhmedR</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="games.html" class="active"><i class="fas fa-gamepad"></i> تعريبات الألعاب</a></li>
+                <li><a href="request.html"><i class="fas fa-comment"></i> طلب تعريب</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> من نحن؟</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1 class="section-title"><i class="fas fa-gamepad"></i> الألعاب المعربة</h1>
+        
+        <div class="games-grid">
+            <!-- لعبة ستار ديوفالي -->
+            <div class="game-card">
+                <img src="/img/stardew.png" alt="تعريب ستار ديوفالي">
+                <div class="game-card-content">
+                    <h3>تعريب ستار ديوفالي</h3>
+                    <p>تعريب كامل للعبة Stardew Valley مع ترجمة جميع النصوص والقوائم</p>
+                    <div class="game-info">
+                        <p><i class="fas fa-calendar-alt"></i> تاريخ الإصدار: 15 يناير 2023</p>
+                        <p><i class="fas fa-download"></i> حجم التعريب: 15 ميجابايت</p>
+                    </div>
+                    <a href="stardew-valley.html" class="btn">تحميل التعريب</a>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="/img/crusader-king-ico.jfif" alt="تعريب crusader king 3">
+                <div class="game-card-content">
+                    <h3>تعريب crusader king 3</h3>
+                    <p>تعريب كامل للنصوص والاعدادات والقوائم</p>
+                    <div class="game-info">
+                        <p><i class="fas fa-calendar-alt"></i> تاريخ الإصدار: 28 مارس 2025</p>
+                        <p><i class="fas fa-download"></i> حجم التعريب: 63.9 ميجابايت</p>
+                    </div>
+                    <a href="king-crusader.html" class="btn">تحميل التعريب</a>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="/img/victoria.png" alt="تعريب Victoria 3">
+                <div class="game-card-content">
+                    <h3>تعريب Victoria 3</h3>
+                    <p>تعريب كامل للنصوص والاعدادات والقوائم</p>
+                    <div class="game-info">
+                        <p><i class="fas fa-calendar-alt"></i> تاريخ الإصدار: 3 أبريل 2025</p>
+                        <p><i class="fas fa-download"></i> حجم التعريب: 241 ميجابايت</p>
+                    </div>
+                    <a href="victoria-3.html" class="btn">تحميل التعريب</a>
+                </div>
+            </div>
+            
+            <!-- يمكنك إضافة المزيد من الألعاب بنفس النمط -->
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="games.html">تعريبات الألعاب</a></li>
+                    <li><a href="request.html">طلب تعريب</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>تواصل معنا</h3>
+                <ul>
+                    <li><a href="https://wsend.co/201554986533">واتساب</a></li>
+                    <li><a href="mailto:sinperrr3ddd@gmail.com">البريد الإلكتروني</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="social-icons">
+            <a href="https://api.whatsapp.com/send/?phone=201554986533"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:sinperrr3ddd@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        
+        <div class="copyright">
+            جميع الحقوق محفوظة &copy; <span id="year"></span> AhmedR لتعريب الألعاب
+        </div>
+    </footer>
+
+    <script>
+        // إضافة السنة الحالية تلقائياً
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

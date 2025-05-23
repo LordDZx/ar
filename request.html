@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب تعريب لعبة - AhmedR</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --secondary-color: #e63946;
+            --accent-color: #457b9d;
+            --text-color: #f1faee;
+            --light-gray: #a8dadc;
+        }
+        
+        body {
+            font-family: 'Tajawal', Arial, sans-serif;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-left: 10px;
+        }
+        
+        .logo h1 {
+            color: var(--text-color);
+            font-size: 1.8rem;
+            margin: 0;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        
+        .request-form {
+            background-color: #2d2d2d;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .form-title {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #3d3d3d;
+            color: white;
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto 0;
+            transition: all 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background-color: #c1121f;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .whatsapp-contact {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #2d2d2d;
+            border-radius: 8px;
+        }
+        
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        
+        footer {
+            background-color: #0f0f0f;
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .copyright {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="AhmedR Logo">
+            <h1>AhmedR</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="games.html"><i class="fas fa-gamepad"></i> تعريبات الألعاب</a></li>
+                <li><a href="request.html"><i class="fas fa-comment"></i> طلب تعريب</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> من نحن؟</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="request-form">
+            <h2 class="form-title">طلب تعريب لعبة</h2>
+            <form action="https://formsubmit.co/ahmed.r.elshrief@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="name">اسمك</label>
+                    <input type="text" id="name" name="name" placeholder="اسمك الكامل" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" placeholder="بريدك الإلكتروني" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">تفاصيل طلب التعريب</label>
+                    <textarea id="message" name="message" placeholder="اسم اللعبة المراد تعريبها وأي تفاصيل أخرى..." required></textarea>
+                </div>
+                
+                <input type="hidden" name="_next" value="https://archive-ahmed.netlify.app/thank.html">
+                <input type="hidden" name="_subject" value="طلب تعريب جديد">
+                
+                <button type="submit" class="submit-btn">إرسال الطلب</button>
+            </form>
+        </div>
+        
+        <div class="whatsapp-contact">
+            <h3>أو يمكنك التواصل مباشرة عبر واتساب</h3>
+            <a href="https://api.whatsapp.com/send?phone=2⁦201554986533⁩" class="whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> تواصل عبر واتساب
+            </a>
+        </div>
+    </div>
+    
+    <footer>
+        <p class="copyright">جميع الحقوق محفوظة &copy; <span id="year"></span> AhmedR لتعريب الألعاب</p>
+    </footer>
+
+    <script>
+        // إضافة السنة الحالية تلقائياً
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
